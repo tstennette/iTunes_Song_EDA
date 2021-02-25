@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Read the file and specify which column is the date
-track_list = pd.read_excel("Track_List_02-21-2021.xls")
+track_list = pd.read_excel("Track_List.xls")
 
 # Output with dates converted to YYYY-MM-DD
 track_list["Date Added"] = pd.to_datetime(track_list["Date Added"]).dt.strftime("%Y-%m-%d")
