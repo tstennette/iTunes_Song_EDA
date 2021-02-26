@@ -1,4 +1,5 @@
-#This script changed the date format from iTunes mm/dd/yyyy to yyyy/mm/dd 
+#This script changed the date format from iTunes mm/dd/yyyy to yyyy/mm/dd
+#will also strip date time
 import pandas as pd
 import os
 

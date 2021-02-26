@@ -1,4 +1,6 @@
 #!/usr/bin/python
+#this program connects to a mySQL database and inserts rows into the database table Tracks
+#I did this to examine my data ahead of my EDA via queries and impute values for skips
 import mysql.connector as conn
 import csv
 import os
@@ -17,7 +19,7 @@ mydb = mysql.connector.connect(
 )
 cur = mydb.cursor()
 
-csv_file = input("Enter name of .csv file to upload to %s", db)
+csv_file = input("Enter name of .csv file to upload to " + db)
 
 csv_data = csv.reader(open(csv_file), delimiter = ',')
 
